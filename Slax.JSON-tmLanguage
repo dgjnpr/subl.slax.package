@@ -73,6 +73,10 @@
            "2": { "name": "markup.underline.link.slax" }
        }
     },
+    { "name": "variable.language.slax",
+      "begin": "^\\s*var\\s+\\$arguments\\s*\\=\\s*\\{",
+      "end": "^\\s*\\}"
+    },
     { "name": "variable.other.slax",
       "match": "(\\$[-a-zA-Z0-9_]+)"
     },
