@@ -1,0 +1,31 @@
+<snippet>
+  <content><![CDATA[
+version 1.0;   /* XML version not script version */
+
+ns junos = "http://xml.juniper.net/junos/*/junos";
+ns xnm = "http://xml.juniper.net/xnm/1.1/xnm";
+ns jcs = "http://xml.juniper.net/junos/commit-scripts/1.0";
+ns ext = "http://xmlsoft.org/XSLT/namespace";
+ 
+import "../import/junos.xsl";
+
+${1:
+var \$arguments = {
+  <argument> {
+    <name> ${2};
+    <description> ${3};
+  }
+}
+}
+
+match / {
+  <event-script-results> {
+    ${4:/* your code goes here */}
+  }
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>event-script</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>

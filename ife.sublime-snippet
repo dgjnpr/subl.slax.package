@@ -3,9 +3,12 @@
 if (${1}) {
   ${2:/* if true */}
 }
+else {
+  ${3:/* if false */}
+}
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>if</tabTrigger>
+  <tabTrigger>ife</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <!-- <scope>source.python</scope> -->
 </snippet>
