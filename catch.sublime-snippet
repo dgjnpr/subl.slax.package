@@ -1,7 +1,7 @@
 <snippet>
   <content><![CDATA[
 if (\$${1}/../xnm:error) {
-  call ${2:rpc_failure}(\${2:rpc} = \$${1}, \$${3:message} = "${4:Error with ${1}}");
+  call ${2:rpc_failure}(\$${2:rpc} = \$${1}, \$${3:message} = "${4:Error with ${1}}");
 }
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
