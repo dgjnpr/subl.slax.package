@@ -34,13 +34,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(apply-templates|match|mode|param|priority|var|version|with|import)\b</string>
+			<string>\b(apply-templates|match|mode|param|priority|var|mvar|version|with|import)\b</string>
 			<key>name</key>
 			<string>keyword.other.slax</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(call|else|for-each|if)\b</string>
+			<string>\b(call|else|for-each|if|set)\b</string>
 			<key>name</key>
 			<string>keyword.control.slax</string>
 		</dict>
@@ -64,7 +64,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>^\s*(template)\s+([-a-zA-Z0-9_:]+)\s*\((.*)\)</string>
+			<string>^\s*(template|call)\s+([-a-zA-Z0-9_:]+)\s*\((.*)\)</string>
 			<key>name</key>
 			<string>meta.template.slax</string>
 		</dict>
@@ -169,7 +169,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(\$[-a-zA-Z0-9]+)(\/.+)</string>
+			<string>(\$[-a-zA-Z0-9]+)(\/[^;){,\s]+)</string>
 			<key>name</key>
 			<string>variable.other.slax</string>
 		</dict>

@@ -13,13 +13,13 @@
       "match": "(\\/[-a-zA-Z0-9_]+|[-a-zA-Z0-9_]+\\/[-a-zA-Z0-9_]+|\\/[-a-zA-Z0-9_]+\\/[-a-zA-Z0-9_]+)"  
     }, 
     { "name": "keyword.other.slax",
-      "match": "\\b(apply-templates|match|mode|param|priority|var|version|with|import)\\b"
+      "match": "\\b(apply-templates|match|mode|param|priority|var|mvar|version|with|import)\\b"
     },
     {  "name": "keyword.control.slax",
-       "match": "\\b(call|else|for-each|if)\\b"
+       "match": "\\b(call|else|for-each|if|set)\\b"
     },
     { "name": "meta.template.slax",
-      "match": "^\\s*(template)\\s+([-a-zA-Z0-9_:]+)\\s*\\((.*)\\)",
+      "match": "^\\s*(template|call)\\s+([-a-zA-Z0-9_:]+)\\s*\\((.*)\\)",
       "captures": {
         "1": { "name": "keyword.other.slax" },
         "2": { "name": "entity.name.function.slax" },
@@ -67,7 +67,7 @@
       "match": "\\b(copy-of|expr|import|not|ns junos|ns xnm|ns jcs)\\b"
     },
     {  "name": "variable.other.slax",
-       "match": "(\\$[-a-zA-Z0-9]+)(\\/.+)",
+       "match": "(\\$[-a-zA-Z0-9]+)(\\/[^;){\\ ]+)",
        "captures": {
            "1": { "name": "variable.other.slax" },
            "2": { "name": "markup.underline.link.slax" }
