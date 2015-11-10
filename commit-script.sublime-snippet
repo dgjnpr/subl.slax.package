@@ -9,10 +9,8 @@ ns ext = "http://xmlsoft.org/XSLT/namespace";
  
 import "../import/junos.xsl";
 
-match / {
-  <commit-script-results> {
-    ${4:/* your code goes here */}
-  }
+match configuration {
+  ${4:/* your code goes here */}
 }
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
