@@ -1,12 +1,17 @@
 <snippet>
   <content><![CDATA[
-<arguments> {
-  <name> ${1};
-  <description> ${2};
+if (${1}) {
+  ${2:/* if this true */}
+}
+else if (${3}) {
+  ${4:/* or if this true */}
+}
+else {
+  ${5:/* else */}
 }
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>arg</tabTrigger>
+  <tabTrigger>ifeife</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <!-- <scope>source.slax</scope> -->
 </snippet>
